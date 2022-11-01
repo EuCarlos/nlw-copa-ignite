@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "db:init": "npx prisma init --datasource-provider SQLite",
+    "db:diagram":"npx prisma generate",
     "db:view": "npx prisma studio",
     "db:migrate": "npx prisma migrate dev"
   },
@@ -16,7 +18,9 @@
   "author": "Carlos Alves",
   "license": "ISC",
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.1.7",
     "prisma": "^4.5.0",
+    "prisma-erd-generator": "^1.2.2",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4"
   },
