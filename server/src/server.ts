@@ -8,7 +8,6 @@ import { gameRoutes } from './routes/game.routes'
 import { guessRoutes } from './routes/guess.routes'
 import { userRoutes } from './routes/user.routes'
 
-
 async function bootstrap() {
 	const fastify = Fastify({
 		logger: true
